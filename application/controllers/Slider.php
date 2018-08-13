@@ -37,7 +37,7 @@ class Slider extends CI_Controller {
             if($this->session->userdata('usuario')!='' ):
                     
                 $this->form_validation->set_rules('despequenia','Des. Corta','trim|htmlspecialchars|max_length[50]'); 
-                $this->form_validation->set_rules('descripcion','Descripcion','required|trim|htmlspecialchars|min_length[3]|max_length[100]');                   
+                $this->form_validation->set_rules('descripcion','Descripcion','trim|htmlspecialchars|min_length[3]|max_length[100]');                   
             	$this->form_validation->set_rules('estado','Estado','trim');
                 
             
@@ -97,7 +97,7 @@ class Slider extends CI_Controller {
                     
                 $this->form_validation->set_rules('idslider','ID Slider','required|trim|htmlspecialchars|is_natural'); 
                 $this->form_validation->set_rules('despequenia','Des. Corta','trim|htmlspecialchars|max_length[50]'); 
-                $this->form_validation->set_rules('descripcion','Descripcion','required|trim|htmlspecialchars|min_length[3]|max_length[100]');                   
+                $this->form_validation->set_rules('descripcion','Descripcion','trim|htmlspecialchars|min_length[3]|max_length[100]');                   
             	$this->form_validation->set_rules('estado','Estado','trim');
                 
             

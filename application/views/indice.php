@@ -93,7 +93,7 @@
         <div class="container ">
             <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-9 wrap-menu-box">
-                    <a href="index-2.html"><img src="<?php echo base_url()?>radio/images/LOGO-CORAZONES.png" alt="logo" width="145" height="30" class="alignnone size-full wp-image-2190" /></a></p>
+                    <a href="index-2.html"><img src="<?php echo base_url()?>radio/images/LOGO-CORAZONES.png" alt="logo" width="110" height="5" class="alignnone size-full wp-image-2190" /></a></p>
 
                     <nav class="menu-primary-container">
                         <ul id="menu-primary" class="header-menu custom_menu clearfix">
@@ -148,24 +148,11 @@
                     <ul class="slides">
                         <?php foreach($slider as $dato):?>
 
-                        <?php endforeach;?>    
-                        <!--
                             <li style="display: block; width: 100%;" class="slide-2174 ms-image"><img src="<?php echo base_url()?>gallery/picture/slider/<?php echo $dato['foto'];?>" height="780" width="1920" alt="" class="slider-154 slide-2174" /><div class="caption-wrap"><div class="caption"><h2><?php echo $dato['despequenia'];?></h2>
                             <h3><?php echo $dato['des_grande'];?></h3>
-                            <a href="#" class="btn-big">Listen now</a></div></div></li>
-                        -->
-                        <li style="display: block; width: 100%;" class="slide-2174 ms-image"><img src="<?php echo base_url()?>radio/images/themes/slide1-1920x780.jpg" height="780" width="1920" alt="" class="slider-154 slide-2174" /><div class="caption-wrap"><div class="caption"><h2><?php echo $dato['despequenia'];?></h2>
-                            <h3><?php echo $dato['des_grande'];?></h3>
-                            <a href="#" class="btn-big">Listen now</a></div></div></li>
-                        <li style="display: block; width: 100%;" class="slide-2174 ms-image"><img src="<?php echo base_url()?>radio/images/slide4.jpg" height="780" width="1920" alt="" class="slider-154 slide-2174" /><div class="caption-wrap"><div class="caption"><h2>the Best Music Hits <br>on Radio Station</h2>
-                            <h3>Listen on 106.6 FM</h3>
-                            <a href="#" class="btn-big">Listen now</a></div></div></li>
-                        <li style="display: none; width: 100%;" class="slide-2175 ms-image"><img src="<?php echo base_url()?>radio/images/themes/slide2-1920x780.jpg" height="780" width="1920" alt="" class="slider-154 slide-2175" /><div class="caption-wrap"><div class="caption"><h2>Guitars Hits <br>on Radio one</h2>
-                            <h3>Listen in your town</h3>
-                            <a href="#" class="btn-big">Listen now</a></div></div></li>
-                        <li style="display: none; width: 100%;" class="slide-2176 ms-image"><img src="<?php echo base_url()?>radio/images/themes/slide3-1920x780.jpg" height="780" width="1920" alt="" class="slider-154 slide-2176" /><div class="caption-wrap"><div class="caption"><h2>Rock concert for you</h2>
-                            <h3>Listen us every monday</h3>
-                            <a href="#" class="btn-big">Listen now</a></div></div></li>
+                            <!--<a href="#" class="btn-big">Listen now</a>--></div></div></li>
+                        <?php endforeach;?>  
+                       
                     </ul>
                 </div>
 
@@ -174,17 +161,17 @@
                 var metaslider_154 = function($) {
                     $('#metaslider_154').addClass('flexslider'); // theme/plugin conflict avoidance
                     $('#metaslider_154').flexslider({
-                        slideshowSpeed:3000,
+                        //slideshowSpeed:3000,
                         animation:"fade",
                         controlNav:true,
                         directionNav:false,
                         pauseOnHover:true,
                         direction:"horizontal",
                         reverse:false,
-                        animationSpeed:600,
+                        //animationSpeed:600,
                         prevText:"&lt;",
                         nextText:"&gt;",
-                        slideshow:false
+                        slideshow:true
                     });
                 };
                 var timer_metaslider_154 = function() {
@@ -196,7 +183,7 @@
 
         <!--// meta slider-->
         <div class="just_wrapper popular-artists">
-            <div class="container ">
+            <div class="container">
                 <div class="row">
                     <div class="col-xs-12">
                         <h2>Videos destacados del dia </h2>
@@ -222,80 +209,10 @@
                     <div class="col-xs-12">
                         <h2>Lista de V&iacute;deos</h2>
                         <div class="spacer_super_small"></div>
-                        <section class="recent-posts owl-carousel clearfix">
-                           
-                            <?php 
-
-                               
-
-                                $text1="";
-                                $text2=""; 
-                                foreach($videos as $v): 
-                                    $text1=(html_entity_decode($v['des_larga']));
-                                    $text2=nl2br(str_replace("<p>","",$text1));
-                            ?>
-                                <div class="post-2184 artists type-artists status-publish has-post-thumbnail hentry ">
-                                    <div class=""><figure class="featured-thumbnail">
-                                        <a href="#" >
-                                     <img  src="<?php echo base_url()?>radio/images/themes/djmain-268x265.jpg"/></a></figure>
-                                    </div>
-                                    <div class="wrapInfo"><h4><?php echo $v['des_corta'];?></h4>
-                                        <div class="excerpt"><?php echo (wordwrap((str_replace("<br>","",$text2)),52,' ',1));?><span class="excert_arrow"></span></div>                           
-                                    </div>
-                                </div>
-                            <?php endforeach;?>
-                           
-                            <div class="post-2183 artists type-artists status-publish has-post-thumbnail hentry ">
-                                <div class="wrapImg">
-                                    <figure class="featured-thumbnail">
-                                        <a href="lylu-johnson.html" title="John Werbed"><img  src="<?php echo base_url()?>radio/images/themes/artist3-268x265.jpg"/></a>
-                                    </figure>
-                                </div>
-                                <div class="wrapInfo"><h4>John Werbed</h4>
-                                    <div class="meta">December 18, 2015</div>
-                                    <div class="excerpt">Dacinia libero uisque quis maximus velit. Suspendisse ullamcorper mi sit amet odio pulvinar facilisis. Donec porta at mauris ac commodo. Ut eget libero faucibus,<span class="excert_arrow"></span>
-                                    </div><a href="lylu-johnson.html" class="readmore" title="John Werbed">more info</a>
-                                </div>
-                            </div>
-                            <div class="post-2182 artists type-artists status-publish has-post-thumbnail hentry ">
-                                <div class="wrapImg">
-                                    <figure class="featured-thumbnail"><a href="lylu-johnson.html" title="Jazz band &#8220;Sydney&#8221;">
-                                        <img  src="<?php echo base_url()?>radio/images/themes/artist4-268x265.jpg"/></a>
-                                    </figure>
-                                </div>
-                                <div class="wrapInfo"><h4>Jazz band &#8220;Sydney&#8221;</h4>
-                                    <div class="meta">December 18, 2015</div><div class="excerpt">Quisque quis maximus velit. Suspendisse ullamcorper mi sit amet odio pulvinar facilisis. Donec porta at mauris ac commodo. Ut eget libero faucibus, tempor felis<span class="excert_arrow"></span>
-                                    </div>
-                                    <a href="lylu-johnson.html" class="readmore" title="Jazz band &#8220;Sydney&#8221;">more info</a>
-                                </div>
-                            </div>
-                            <div class="post-2181 artists type-artists status-publish has-post-thumbnail hentry ">
-                                <div class="wrapImg">
-                                    <figure class="featured-thumbnail"><a href="lylu-johnson.html" title="Pol Anderson">
-                                        <img  src="<?php echo base_url()?>radio/images/themes/artist2-268x265.jpg"/></a>
-                                    </figure>
-                                </div>
-                                <div class="wrapInfo"><h4>Pol Anderson</h4>
-                                    <div class="meta">December 18, 2015</div>
-                                    <div class="excerpt">Wendrerit, dapibus neque ut, lacinia libero. Quisque quis maximus velit. Suspendisse ullamcorper mi sit amet odio pulvinar facilisis. Donec porta at mauris ac commodo.<span class="excert_arrow"></span>
-                                    </div>
-                                    <a href="lylu-johnson.html" class="readmore" title="Pol Anderson">more info</a>
-                                </div>
-                            </div>
-                            <div class="post-2180 artists type-artists status-publish has-post-thumbnail hentry ">
-                                <div class="wrapImg">
-                                    <figure class="featured-thumbnail"><a href="lylu-johnson.html" title="Adam Smith">
-                                        <img  src="<?php echo base_url()?>radio/images/themes/artist1-268x265.jpg"/></a>
-                                    </figure>
-                                </div>
-                                <div class="wrapInfo"><h4>Adam Smith</h4>
-                                    <div class="meta">December 18, 2015</div>
-                                    <div class="excerpt">Phasellus in sem hendrerit, dapibus neque ut, lacinia libero. Quisque quis maximus velit. Suspendisse ullamcorper mi sit amet odio pulvinar facilisis. Donec porta at<span class="excert_arrow"></span>
-                                    </div>
-                                    <a href="lylu-johnson.html" class="readmore" title="Adam Smith">more info</a>
-                                </div>
-                            </div>
-
+                        <section class="recent-posts owl-carousel clearfix" id="carga_videos">
+                           <div class="post-2183 artists type-artists status-publish has-post-thumbnail hentry "><div class="wrapImg"><figure class="featured-thumbnail"><a href="lylu-johnson.html" title="John Werbed"><img  src="images/themes/artist3-268x265.jpg"/></a> </figure></div><div class="wrapInfo"><h4>John Werbed</h4><div class="meta">December 18, 2015</div><div class="excerpt">Dacinia libero uisque quis maximus velit. Suspendisse ullamcorper mi sit amet odio pulvinar facilisis. Donec porta at mauris ac commodo. Ut eget libero faucibus,<span class="excert_arrow"></span></div><a href="lylu-johnson.html" class="readmore" title="John erbed">more info</a></div> </div>
+                          
+                            
                         </section>
                     </div>
 
@@ -534,7 +451,7 @@
         // 3. This function creates an <iframe> (and YouTube player)
         //    after the API code downloads.
          
-          $.ajax({
+        /*  $.ajax({
             url:"<?php echo base_url()?>Videos/Listar_videos_destacados",
             type:"post",
             data:{"estado":1,"destacado":1,"token":"<?php echo $this->security->get_csrf_hash();?>"},   
@@ -563,12 +480,14 @@
                 alertify.error('Whoops! Ocurrió un error durante el proceso..!.');
                 console.log(data);  
             }
-        });   
-        CargaVideos(); 
+        });   */
+        
+
+         
     })
 
     /*Funciones para consumir API YOUTUBE*/
-
+  
     function doYT(){
        
          
@@ -581,10 +500,10 @@
           $text1=(html_entity_decode($value['des_larga']));
           $text2=nl2br(str_replace("<p>","",$text1));
         ?>
-                //console.log('<? //echo $text2;?>');
-                //var p=$("<p/>").html(<?php //echo $text2?>).text();
+                             
+            if((typeof YT !== "undefined") && YT && YT.Player){
                 etiqueta='<div class="col-xs-12 col-sm-4"> <div class="video-responsive" id="video<?php echo $value['idvideos']?>"> </div> <h3><?php echo $value['des_corta']?></h3><?php echo $text2;?> </div>';
-              $("#videosdestacados").append(etiqueta);
+                $("#videosdestacados").append(etiqueta);
                player = new YT.Player('video<?php echo $value['idvideos']?>', {
                   height: '250',
                   width: '280',
@@ -594,6 +513,11 @@
                     'onStateChange': onPlayerStateChange
                   }
                 });
+               
+            }else{
+                setTimeout(doYT/*location.reload()*/, 3000);
+                
+           }
         <?      
         
           } 
@@ -602,9 +526,11 @@
     }
     function onPlayerReady(event) {
         //event.target.playVideo();
+       
       }
       var done = false;
      function onPlayerStateChange(event) {
+       
         if (event.data == YT.PlayerState.PLAYING && !done) {
           //setTimeout(stopVideo, 6000);
           done = true;
@@ -613,6 +539,7 @@
       }
        function stopVideo() {
         player.stopVideo();
+         
       }
 
     window.YT && doYT() || function(){
@@ -621,11 +548,13 @@
         a.setAttribute("src","http://www.youtube.com/player_api");
         a.onload=doYT;
         a.onreadystatechange=function(){
-            if (this.readyState=="complete"||this.readyState=="loaded") doYT()
+            if (this.readyState=="complete"||this.readyState=="loaded") doYT() 
         };
+
         (document.getElementsByTagName("head")[0]||document.documentElement).appendChild(a)
+
     }();
-     
+
 
 
     /*Cargamos videos*/

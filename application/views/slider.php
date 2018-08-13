@@ -72,7 +72,7 @@
 			                    </div>
 			                    <div class="col-md-8 form-group">                     
 
-			                       <textarea tabindex="2" data-type="alphanum" data-parsley-minlength="[3]" data-parsley-maxlength="[100]" required  autocomplete="off" class="form-control input-sm" id="descripcion"  placeholder="Descripción"  name="descripcion" maxlength="200" rows="10"></textarea>
+			                       <textarea tabindex="2" data-type="alphanum" data-parsley-minlength="[3]" data-parsley-maxlength="[100]"   autocomplete="off" class="form-control input-sm" id="descripcion"  placeholder="Descripción"  name="descripcion" maxlength="200" rows="10"></textarea>
 			                    </div>                                  
 			                </div>
 			                <div class="row">

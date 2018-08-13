@@ -27,12 +27,12 @@
          
         var etiqueta="";
         <?php 
-        /* if($videos):
+         if($videos):
           $text1="";
          $text2="";
          foreach ($videos as $value){ 
           $text1=(html_entity_decode($value['des_larga']));
-          $text2=nl2br(str_replace("<p>","",$text1));*/
+          $text2=nl2br(str_replace("<p>","",$text1));
         ?>
                 //console.log('<? //echo $text2;?>');
                 //var p=$("<p/>").html(<?php //echo $text2?>).text();
@@ -49,8 +49,8 @@
                 });
         <?      
         
-          /*} 
-          endif;  */ 
+          } 
+          endif;   
         ?>
     }
     function onPlayerReady(event) {
